@@ -7,7 +7,11 @@ const Name = () => {
 
     const submitHandler = (e) => {
         e.preventDefault();
-        setFullName(`${firstName} ${lastName}`)
+        if (firstName.trim() && lastName.trim()) {
+            setFullName(`${firstName} ${lastName}`);
+        } else {
+            setFullName("");
+        }
     }
     console.log(fullName)
     return (
@@ -23,7 +27,7 @@ const Name = () => {
                     <input type="text" name='lastname' value={lastName} onChange={(e) => setLastName(e.target.value)} required />
                 </div>
                 <div className='action-controls'>
-                    <button>Submit</button>
+                    <button type="submit">Submit</button>
                 </div>
             </form>
 

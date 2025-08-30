@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 50px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.input-controls {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.input-controls input {
+  padding: 7px;
+  outline: 0;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.action-controls button {
+  padding: 7px 14px;
+  outline: 0;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
